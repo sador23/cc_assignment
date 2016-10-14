@@ -4,7 +4,7 @@ def inputname():
     '''Keeps asking until a string is inputted'''
     while True:
         try:
-            name=input("Adja be a nevét!")
+            name=input("Please enter your name!")
             int(name)
             print("This is not a string! Please enter a string")
         except ValueError:
