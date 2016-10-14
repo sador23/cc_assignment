@@ -10,8 +10,6 @@ def inputname():
         except ValueError:
             return name
             
-
-
 def greeting(name):
     '''Greets the person, depending on the name'''
     if not name:
