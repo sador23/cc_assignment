@@ -6,14 +6,15 @@ commands=["add","liste","mark","archive"]
 class todo(): 
     todolist=[]
     marklist=[]
-    marked=("[x]")
+    marked="[x]"
     notmarked="[]"
 
     def add():
         a=input("add an item:")
         todolist.append(a)
         len(todolist)-1
-        marklist=["[]"]
+        marklist.append(notmarked)
+        len(notmarked)-1
         print("Item added.")
 
     def liste():
@@ -23,7 +24,7 @@ class todo():
 
     def mark():
 
-        print("mark")
+
 
     def archive():
         for i in range(0,len(marklist)-1):
