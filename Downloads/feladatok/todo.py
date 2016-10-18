@@ -7,9 +7,9 @@ notmarked="[]"
 def add():
         a=input("add an item:")
         todolist.append(a)
-        len(todolist)-1
+        
         marklist.append(notmarked)
-        len(notmarked)-1
+        
         print("Item added.")
 
 def liste():
@@ -20,16 +20,17 @@ def liste():
 def mark():
         print ('You saved the following to-do items:')
         liste ()
-        i = input ('Which one you want to mark as completed: ')
+        y = input ('Which one you want to mark as completed: ')
+        i = int(y)-1
         marklist[i] = marked
         print (str(todolist[i]) + ' is completed')
 
 
 def archive():
         for i in range(0,len(marklist)-1):
-            if marklist[i]==marked:
-                todolist.remove(i)
-                marked.remove(i)
+            if marklist[i]=="[x]":
+                todolist.remove(todolist[i])
+                marklist.remove(marklist[i])
                 print("You saved the following items : ")
                 liste()
     
